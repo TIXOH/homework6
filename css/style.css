@@ -1,0 +1,158 @@
+ul {
+    list-style: none;
+}
+
+body {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    width: 200px;
+    height: 80px;
+    margin: 20px auto;
+    background: linear-gradient(270deg, rgb(170, 6, 249), rgb(6, 249,180));
+}
+
+.add-task {
+    height: 100px;
+    background: #4b89ce;
+    position: relative;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.new-task {
+    height: 66px;
+    width: 100%;
+    margin-right: 66px;
+    border: none;
+    border-radius: 7px;
+    border-top-right-radius: 33px;
+    border-bottom-right-radius: 33px;
+    text-indent: 26px;
+    font-size: 20px;
+    background: rgba(255,255,255, 0.5);
+
+}
+
+.add-task-btn{
+    right: 105px;
+    font-size: 40px;
+    color: #4b89ce;
+}
+
+.clear-all-btn{
+    right: 20px;
+    font-size: 35px;
+    color: #e65624;
+}
+
+.main-btns-style {
+    top:17px;
+    background: #fff;
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 50%;
+        justify-content: center;
+}
+
+
+.edit-btn:hover{
+    color:green;
+}
+
+.task-list {
+    margin-right:60px;
+}
+
+.task-list>:nth-child(3n) {
+    background: lightcoral;
+    color:white;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 7px;
+    padding: 3px;
+    margin-top: 12px;
+}
+
+.task-text {
+    height: 66px;
+    width: 100%;
+    margin-right: 7px;
+    border-radius: 7px;
+    font-size: 25px;
+    padding-left: 45px;
+}
+
+.task-checked {
+    text-decoration: line-through;
+    color: grey;
+}
+.task-checked:before {
+    content: '';
+    position: absolute;
+    border-color: darkgreen;
+    border-style: solid;
+    border-width: 0 4px 4px 0;
+    top: 11px;
+    left: 16px;
+    transform: rotate(40deg);
+    height: 33px;
+    width: 16px;
+}
+
+.btn-block {
+    justify-content: space-around;
+    width: 170px;
+}
+
+.del-btn {
+    border: none;
+}
+
+.edit-btn {
+    color: black;
+}
+
+.block-btns-style {
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 25px;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.del-btn:hover {
+    color:red;  
+} 
+
+.edit {
+    display: none;
+}
+
+.checked {
+    color:green;
+}
